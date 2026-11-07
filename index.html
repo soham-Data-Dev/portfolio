@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soham Shinde | Portfolio</title>
+  <meta name="description" content="Portfolio of Soham Shinde — Final-Year B.E. IT Student specializing in ETL Pipelines, SQL, PostgreSQL, Data Modeling, and Business Dashboards." />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-wrap">
+      <a href="#hero" class="brand" aria-label="Soham Shinde Home">
+        <span class="brand-avatar-mini">
+          <img src="avatar.png" alt="Soham Shinde" width="30" height="30" />
+        </span>
+        <span class="brand-name">Soham Shinde</span>
+        <span class="brand-badge">B.E. IT</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#pipeline" class="nav-link">Architecture</a>
+        <a href="#credentials" class="nav-link">Education &amp; Certs</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a href="mailto:sohamshinde164@gmail.com" class="btn btn-sm btn-primary">Let's Connect</a>
+        <button id="mobile-toggle" class="btn-icon mobile-only" aria-label="Open menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" hidden>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#pipeline" class="mobile-nav-link">Architecture</a>
+      <a href="#credentials" class="mobile-nav-link">Education &amp; Certs</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="mailto:sohamshinde164@gmail.com" class="btn btn-primary" style="margin-top: 8px;">Email Me</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Left: Text & Pitch -->
+        <div class="hero-text-content">
+          <div class="status-pill">
+            <span class="status-indicator"></span>
+            <span>Open to Internships &amp; New Opportunities</span>
+          </div>
+
+          <h1 class="hero-heading">
+            Building reliable <span class="gradient-text">data pipelines</span>, dimensional models, and analytics platforms.
+          </h1>
+
+          <p class="hero-subtext">
+            Hi, I'm <strong>Soham Shinde</strong> — Final-Year B.E. Information Technology student based in <strong>Ahilyanagar, Maharashtra</strong>. I specialize in designing Python/Pandas ETL workflows, structuring PostgreSQL star schemas, enforcing data quality, and building executive dashboards in Power BI and Tableau.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Case Studies</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="https://github.com/Soham-Data-Dev" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <svg height="17" viewBox="0 0 16 16" width="17" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+              <span>GitHub (Soham-Data-Dev)</span>
+            </a>
+            <a href="https://www.linkedin.com/in/soham-s-73b628252/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <svg height="17" viewBox="0 0 24 24" width="17" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.65 1.65 0 1 0-.02-3.3 1.65 1.65 0 0 0 .02 3.3m1.39 10.24v-8.37H5.07v8.37h2.78z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Quick Info Tags -->
+          <div class="quick-meta-strip">
+            <span class="meta-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ahilyanagar, MH, India
+            </span>
+            <span class="meta-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              sohamshinde164@gmail.com
+            </span>
+            <span class="meta-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              B.E. IT (SPPU, 2023–2027)
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: Professional Headshot Card -->
+        <div class="hero-photo-wrap">
+          <div class="photo-frame">
+            <img src="avatar.png" alt="Soham Shinde" class="hero-photo" width="460" height="460" />
+            <div class="photo-overlay-badge">
+              <span class="pulse-ring"></span>
+              <div class="badge-text">
+                <span class="badge-title">Soham Shinde</span>
+                <span class="badge-subtitle">B.E. Information Technology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KEY IMPACT METRICS (Proof-of-Work) -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-stat">4.68M+</span>
+            <span class="metric-title">Total Records Ingested</span>
+            <p class="metric-desc">Handled large-scale tabular datasets across retail, bike-share, and banking domains.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-stat">1.05M+</span>
+            <span class="metric-title">Star Schema Fact Rows</span>
+            <p class="metric-desc">Modeled PostgreSQL dimensional warehouse with reusable CTEs &amp; analytical views.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-stat">473</span>
+            <span class="metric-title">Anomalies Filtered</span>
+            <p class="metric-desc">Standardized 3.62M bike trips by removing bad durations and engineering temporal features.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-stat">10,000+</span>
+            <span class="metric-title">Customers Modeled</span>
+            <p class="metric-desc">Transformed raw bank records into analysis-ready features for ML churn prediction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS (The Core Hiring Evidence) -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">PORTFOLIO WORK</span>
+          <h2 class="section-title">Featured Projects &amp; Case Studies</h2>
+          <p class="section-subtitle">
+            Hiring managers look for end-to-end problem solving: data extraction, cleaning messy records, dimensional modeling, and business-focused dashboards.
+          </p>
+        </div>
+
+        <div class="projects-container">
+          
+          <!-- PROJECT 1: Sales Data Analytics Platform -->
+          <article class="project-showcase">
+            <div class="project-content">
+              <div class="project-badge-bar">
+                <span class="badge-category">ETL &amp; WAREHOUSING</span>
+                <span class="badge-metric">1.05M+ Retail Records</span>
+              </div>
+
+              <h3 class="project-title">Sales Data Analytics Platform</h3>
+              
+              <p class="project-summary">
+                An end-to-end data analytics architecture designed to process high-volume retail transactions, structure them into a normalized dimensional warehouse, and feed executive Power BI reports.
+              </p>
+
+              <!-- Problem -> Architecture -> Impact framework -->
+              <div class="project-deep-dive">
+                <div class="dive-block">
+                  <span class="dive-label">The Pipeline</span>
+                  <p>Built a Python/Pandas batch ETL workflow that deduplicated and classified 1.05M+ raw retail transactions, enforcing strict schema definitions.</p>
+                </div>
+                <div class="dive-block">
+                  <span class="dive-label">Data Modeling</span>
+                  <p>Designed a PostgreSQL Star Schema (Fact Sales, Dim Date, Dim Product, Dim Customer) with reusable SQL analytical views using CTEs, joins, and window functions.</p>
+                </div>
+                <div class="dive-block">
+                  <span class="dive-label">Business Outcome</span>
+                  <p>Automated data quality checks before delivering validated datasets directly into downstream Power BI dashboards for monthly category performance.</p>
+                </div>
+              </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="tech-pills">
+                <span class="pill pill-python">Python</span>
+                <span class="pill pill-pandas">Pandas</span>
+                <span class="pill pill-sql">SQL</span>
+                <span class="pill pill-postgres">PostgreSQL</span>
+                <span class="pill pill-powerbi">Power BI</span>
+                <span class="pill pill-git">Git</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Soham-Data-Dev" target="_blank" rel="noopener noreferrer" class="link-btn primary">
+                  <span>View on GitHub</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Cyclistic Bike-Share Pipeline -->
+          <article class="project-showcase">
+            <div class="project-content">
+              <div class="project-badge-bar">
+                <span class="badge-category">LARGE-SCALE DATA PROCESSING</span>
+                <span class="badge-metric">3.62M+ Trip Records</span>
+              </div>
+
+              <h3 class="project-title">Cyclistic Bike-Share Data Pipeline &amp; Analysis</h3>
+              
+              <p class="project-summary">
+                Consolidated and standardized six monthly bike-share datasets into an analysis-ready repository, detecting ride anomalies and contrasting casual vs. annual member usage behavior.
+              </p>
+
+              <div class="project-deep-dive">
+                <div class="dive-block">
+                  <span class="dive-label">Data Cleaning</span>
+                  <p>Consolidated 6 monthly CSV partitions into a single 3.62M+ row dataset; wrote validation logic that identified and purged 473 invalid trips (negative/sub-minute durations).</p>
+                </div>
+                <div class="dive-block">
+                  <span class="dive-label">Feature Engineering</span>
+                  <p>Engineered granular ride-duration, day-of-week, and month fields to unlock temporal patterns across distinct rider cohorts.</p>
+                </div>
+                <div class="dive-block">
+                  <span class="dive-label">Analytics &amp; BI</span>
+                  <p>Produced an interactive Tableau dashboard showcasing peak usage hours, weekend trends, and commute duration differentials between member types.</p>
+                </div>
+              </div>
+
+              <div class="tech-pills">
+                <span class="pill pill-python">Python</span>
+                <span class="pill pill-pandas">Pandas</span>
+                <span class="pill pill-numpy">NumPy</span>
+                <span class="pill pill-tableau">Tableau</span>
+                <span class="pill pill-git">Git</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Soham-Data-Dev" target="_blank" rel="noopener noreferrer" class="link-btn primary">
+                  <span>View on GitHub</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Bank Customer Churn Analysis -->
+          <article class="project-showcase">
+            <div class="project-content">
+              <div class="project-badge-bar">
+                <span class="badge-category">FEATURE ENGINEERING &amp; ML</span>
+                <span class="badge-metric">10,000+ Customer Records</span>
+              </div>
+
+              <h3 class="project-title">Bank Customer Churn Analysis &amp; Prediction</h3>
+              
+              <p class="project-summary">
+                Exploratory data analysis and feature engineering pipeline on 10,000+ customer records to detect primary drivers of attrition and prepare modeling matrices for machine learning classification.
+              </p>
+
+              <div class="project-deep-dive">
+                <div class="dive-block">
+                  <span class="dive-label">Exploratory Analysis</span>
+                  <p>Assessed multi-variable customer distributions across credit scores, tenure, balance tiers, and activity states using Matplotlib and Pandas.</p>
+                </div>
+                <div class="dive-block">
+                  <span class="dive-label">Feature Pipeline</span>
+                  <p>Executed encoding, outlier treatment, feature scaling, and correlation analysis to output structured training arrays for classification models.</p>
+                </div>
+                <div class="dive-block">
+                  <span class="dive-label">Key Findings</span>
+                  <p>Identified inactive status and single-product holdings as leading indicators of churn, validating recommendations through visual evidence.</p>
+                </div>
+              </div>
+
+              <div class="tech-pills">
+                <span class="pill pill-python">Python</span>
+                <span class="pill pill-pandas">Pandas</span>
+                <span class="pill pill-scikit">Scikit-learn</span>
+                <span class="pill pill-matplotlib">Matplotlib</span>
+                <span class="pill pill-jupyter">Jupyter Notebook</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Soham-Data-Dev" target="_blank" rel="noopener noreferrer" class="link-btn primary">
+                  <span>View on GitHub</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS (Categorized & Badge-Powered) -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">EXPERTISE</span>
+          <h2 class="section-title">Technical Skills &amp; Stack</h2>
+          <p class="section-subtitle">
+            Grounded in scalable pipelines, structured database querying, and dashboard development.
+          </p>
+        </div>
+
+        <div class="skills-card-grid">
+          
+          <!-- Category 1 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Programming &amp; Data Processing</h3>
+                <p class="category-desc">Vectorized manipulations, tabular cleaning &amp; queries</p>
+              </div>
+            </div>
+            <div class="skill-badges-flow">
+              <span class="skill-badge"><span class="badge-dot dot-blue"></span>Python</span>
+              <span class="skill-badge"><span class="badge-dot dot-indigo"></span>Pandas</span>
+              <span class="skill-badge"><span class="badge-dot dot-cyan"></span>NumPy</span>
+              <span class="skill-badge"><span class="badge-dot dot-sky"></span>SQL</span>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">ETL &amp; Data Quality</h3>
+                <p class="category-desc">Pipeline automation, validation &amp; deduplication</p>
+              </div>
+            </div>
+            <div class="skill-badges-flow">
+              <span class="skill-badge">ETL Processes</span>
+              <span class="skill-badge">Data Cleaning</span>
+              <span class="skill-badge">Deduplication</span>
+              <span class="skill-badge">Data Validation</span>
+              <span class="skill-badge">Quality Checks</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Databases &amp; Data Modeling</h3>
+                <p class="category-desc">Relational schemas, CTEs &amp; dimensional views</p>
+              </div>
+            </div>
+            <div class="skill-badges-flow">
+              <span class="skill-badge"><span class="badge-dot dot-sky"></span>PostgreSQL</span>
+              <span class="skill-badge"><span class="badge-dot dot-blue"></span>MySQL</span>
+              <span class="skill-badge">Star Schema</span>
+              <span class="skill-badge">Dimensional Modeling</span>
+              <span class="skill-badge">CTEs &amp; Joins</span>
+              <span class="skill-badge">Window Functions</span>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Business Intelligence &amp; Analytics</h3>
+                <p class="category-desc">Interactive dashboards &amp; visual storytelling</p>
+              </div>
+            </div>
+            <div class="skill-badges-flow">
+              <span class="skill-badge"><span class="badge-dot dot-amber"></span>Power BI</span>
+              <span class="skill-badge"><span class="badge-dot dot-blue"></span>Tableau</span>
+              <span class="skill-badge">EDA</span>
+              <span class="skill-badge">Data Visualization</span>
+              <span class="skill-badge">Scikit-learn</span>
+              <span class="skill-badge">Excel</span>
+            </div>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Tools &amp; Engineering Workflows</h3>
+                <p class="category-desc">Version control, notebook environments &amp; IDEs</p>
+              </div>
+            </div>
+            <div class="skill-badges-flow">
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">GitHub</span>
+              <span class="skill-badge">Jupyter Notebook</span>
+              <span class="skill-badge">VS Code</span>
+              <span class="skill-badge">Google Colab</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE / METHODOLOGY WORKFLOW -->
+    <section id="pipeline" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">ENGINEERING DISCIPLINE</span>
+          <h2 class="section-title">How I Build End-to-End Data Workflows</h2>
+          <p class="section-subtitle">
+            Hiring managers value freshers who understand how raw ingestion translates into executive decision support.
+          </p>
+        </div>
+
+        <div class="workflow-steps">
+          <div class="step-card">
+            <span class="step-num">01</span>
+            <h3 class="step-title">Ingestion &amp; Schema Audit</h3>
+            <p class="step-text">Consolidate multi-source data (CSVs, relational dumps) while checking for nulls, anomalies, and schema discrepancies.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">02</span>
+            <h3 class="step-title">Pandas Transformation</h3>
+            <p class="step-text">Deduplicate records, remove invalid outliers, and engineer temporal/categorical attributes for analytics.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">03</span>
+            <h3 class="step-title">PostgreSQL Modeling</h3>
+            <p class="step-text">Normalize into Fact &amp; Dimension tables, building analytical views with CTEs, joins, and aggregations.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">04</span>
+            <h3 class="step-title">BI &amp; Insight Delivery</h3>
+            <p class="step-text">Connect validated datasets to Power BI and Tableau dashboards to deliver clear answers to business stakeholders.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="credentials" class="section section-alt">
+      <div class="container">
+        <div class="credentials-columns">
+          
+          <!-- Education Column -->
+          <div>
+            <div class="section-heading-left">
+              <span class="section-tag">ACADEMICS</span>
+              <h2 class="section-title-sm">Education</h2>
+            </div>
+
+            <div class="credential-item-card">
+              <div class="card-timeline">2023 – 2027 (Final Year)</div>
+              <h3 class="card-degree">Bachelor of Engineering in Information Technology</h3>
+              <p class="card-institution">Dr. Vithalrao Vikhe Patil College of Engineering, Ahilyanagar</p>
+              <p class="card-university">Savitribai Phule Pune University (SPPU)</p>
+              <div class="coursework-tags">
+                <span>DBMS</span>
+                <span>Data Modeling</span>
+                <span>SQL</span>
+                <span>Python</span>
+                <span>Data Structures</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div>
+            <div class="section-heading-left">
+              <span class="section-tag">CREDENTIALS &amp; SIMULATIONS</span>
+              <h2 class="section-title-sm">Certifications</h2>
+            </div>
+
+            <div class="cert-stack-cards">
+              
+              <div class="credential-item-card">
+                <div class="card-timeline">Aug 2026</div>
+                <h3 class="card-degree">Google Data Analytics Professional Certificate</h3>
+                <p class="card-institution">Coursera</p>
+                <p class="card-desc">Comprehensive training in data cleaning, SQL query design, R/Python analytics, and interactive data visualization.</p>
+              </div>
+
+              <div class="credential-item-card">
+                <div class="card-timeline">May 2026</div>
+                <h3 class="card-degree">Tata - GenAI Powered Data Analytics Job Simulation</h3>
+                <p class="card-institution">Forage</p>
+                <p class="card-desc">Exploratory data analysis, generative AI integration in analytics pipelines, and strategic business scenario evaluation.</p>
+              </div>
+
+              <div class="credential-item-card">
+                <div class="card-timeline">Coursera</div>
+                <h3 class="card-degree">Google Professional AI Certificate</h3>
+                <p class="card-institution">Coursera</p>
+                <p class="card-desc">Applied artificial intelligence, generative AI models, prompt engineering, and operationalizing AI workflows for data-driven analytics and business solutions.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <span class="section-tag">AVAILABLE FOR OPPORTUNITIES</span>
+            <h2 class="contact-title">Let's Discuss Opportunities</h2>
+            <p class="contact-subtitle">
+              I am actively seeking an <strong>Internship opportunity</strong> where I can contribute to production-grade data pipelines, reliable warehouse schemas, and business dashboards.
+            </p>
+          </div>
+
+          <div class="contact-options-grid">
+            
+            <a href="mailto:sohamshinde164@gmail.com" class="contact-action-box">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="contact-box-content">
+                <span class="contact-box-label">Email Directly</span>
+                <span class="contact-box-val">sohamshinde164@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="tel:+918767502383" class="contact-action-box">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-box-content">
+                <span class="contact-box-label">Call / WhatsApp</span>
+                <span class="contact-box-val">+91-8767502383</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/soham-s-73b628252/" target="_blank" rel="noopener noreferrer" class="contact-action-box">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div class="contact-box-content">
+                <span class="contact-box-label">LinkedIn Profile</span>
+                <span class="contact-box-val">soham-s-73b628252 ↗</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/Soham-Data-Dev" target="_blank" rel="noopener noreferrer" class="contact-action-box">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </div>
+              <div class="contact-box-content">
+                <span class="contact-box-label">GitHub Repositories</span>
+                <span class="contact-box-val">Soham-Data-Dev ↗</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean, Professional Footer (No "built with html css") -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="footer-brand">Soham Shinde</span>
+        <span class="footer-copy">&copy; 2026 Soham Shinde · Ahilyanagar, Maharashtra</span>
+      </div>
+
+      <div class="footer-nav">
+        <a href="mailto:sohamshinde164@gmail.com">Email</a>
+        <a href="https://github.com/Soham-Data-Dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/soham-s-73b628252/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#hero">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
